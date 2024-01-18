@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1 class="header">Student registration form</h1>
+    <hr />
+    <form class="form">
+      <div class="row">
+        <label for="name">Name : </label>
+        <input type="text" name="name" id="name" placeholder="name..." />
+        <span class="error" id="name_error"></span>
+      </div>
+
+      <div class="row">
+        <label for="email">Email : </label>
+        <input type="text" name="email" id="email" placeholder="email..." />
+        <span class="error" id="email_error"></span>
+      </div>
+
+      <div class="row">
+        <label for="password">Password : </label>
+        <input
+          type="text"
+          name="password"
+          id="password"
+          placeholder="password..."
+        />
+        <span class="error" id="password_error"></span>
+      </div>
+
+      <div class="row">
+        <label for="course">Course : </label>
+        <select name="course" id="course">
+          <option value="" selected disabled>Select Course</option>
+          <option value="DAC">DAC</option>
+          <option value="DITIS">DITIS</option>
+          <option value="DBDA">DBDA</option>
+        </select>
+        <span class="error" id="course_error"></span>
+      </div>
+
+      <button id="btn" class="btn" type="button">Submit</button>
+    </form>
+
+    <p id="successmessage" class="successmessage"></p>
+
+    <div>
+      <p id="name_details"></p>
+      <p id="email_details"></p>
+      <p id="password_details"></p>
+      <p id="course_details"></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
